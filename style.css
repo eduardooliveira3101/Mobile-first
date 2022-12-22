@@ -20,28 +20,32 @@
 
 main {
   display: grid;
-  gap: 2rem
+  gap: 2rem;
+  animation: anitwo 700ms;
+  padding-inline: 2rem;
 }
 
 .structure {
   text-align: center;
   max-width: 40rem;
   margin: 0 auto 3.2rem ;
-  font-size: var(--fs-txt)
+  font-size: var(--fs-txt);
 }
 
-.structure p {
+p {
   max-width: fit-content;
   margin-bottom: 6.3rem;
   font-family: 'Palanquin', sans-serif;
   font-weight: 400;
   line-height: 2.5rem;
+  animation: anione 800ms;
 }
 
 header {
   background-color: var(--bg-heading);
   height: 30rem;
   margin-bottom: 1.8rem;
+  animation: anione 800ms;
 }
 
 .logo {
@@ -73,6 +77,13 @@ header h1 {
   position: relative;
 }
 
+.card img {
+  width: 32rem;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .card h2 {
   position: absolute;
   top: 1rem;
@@ -93,6 +104,111 @@ header h1 {
   font-size: 3rem;
   transition: 550ms;
 }
+
+@keyframes anione {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-115px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes anitwo {
+
+  0% {
+    opacity: 0;
+    transform: translateX(110px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@media (min-width: 700px) {
+
+  .card img {
+    width: fit-content;
+    height: auto;
+  }
+
+  .structure {
+    text-align: center;
+    max-width: 114rem;
+    margin: 0 auto 3.2rem ;
+    font-size: var(--fs-txt);
+  }
+
+  p {
+    margin: 1.6rem auto 5rem;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 800;
+    max-width: 100%rem;
+    animation: anione 800ms;
+    line-height: 2.5rem;
+  }
+
+  .card img {
+    width: 32rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .band {
+    background-color: #8E9AAF;
+  }
+
+  header h1 {
+    font-size: 7.0rem
+  }
+
+  main {
+    padding: 2rem 3rem 2rem;
+    grid-template-areas: "A B"
+    "C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: C;
+  }
+
+  main div:nth-child(3) {
+    grid-area: B;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+
+  .card h2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem 2.3rem;
+
+  }
+
+}
+
+  
+
+
+  
+
 
 
 
