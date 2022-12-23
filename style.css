@@ -34,7 +34,7 @@ main {
 
 p {
   max-width: fit-content;
-  margin-bottom: 6.3rem;
+  margin-bottom: 4rem;
   font-family: 'Palanquin', sans-serif;
   font-weight: 400;
   line-height: 2.5rem;
@@ -87,7 +87,7 @@ header h1 {
 .card h2 {
   position: absolute;
   top: 1rem;
-  right: 5rem;
+  right: 1rem;
   background-color: #EFF1FF;
   border-radius: 5rem;
   padding: 0.1rem 1.3rem;
@@ -149,10 +149,10 @@ header h1 {
   }
 
   p {
-    margin: 1.6rem auto 5rem;
+    margin: 1.6rem auto 3rem;
     font-family: 'Palanquin', sans-serif;
     font-weight: 800;
-    max-width: 100%rem;
+    max-width: 59rem;
     animation: anione 800ms;
     line-height: 2.5rem;
   }
@@ -173,7 +173,6 @@ header h1 {
   }
 
   main {
-    padding: 2rem 3rem 2rem;
     grid-template-areas: "A B"
     "C D";
   }
@@ -198,9 +197,20 @@ header h1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    background-color: #EFF1FF;
+    border-radius: 5rem;
     padding: 0.3rem 2.3rem;
-
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    color: var(--fc-h2);
+    font-weight: 400;
+    line-height: 3.4rem;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
   }
+
+
+
 
 }
 
